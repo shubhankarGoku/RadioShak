@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Home</title>
+    <link rel="stylesheet" href="../CSS/radioHome.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="time-temp">
+                <span id="time"></span>
+                <span id="temp"></span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="stations">
+                <button>Hits1</button>
+                <button>80s on 8</button>
+                <button>Pulse</button>
+            </div>
+            
+            <div class="left-buttons">
+                <button id="am" class="btn">AM</button>
+                <button id="fm" class="btn">FM</button>
+                <button id="dab" class="btn">DAB</button>
+            </div>
+           
+            <!-- New container for right side buttons -->
+            <div class="right-buttons">
+                <button id="map" class="btn">Map</button>
+                <button id="fav" class="btn">FAV</button>
+            </div>
+
+            <div id="fav-popup" class="popup">
+                <p>Your favorite stations list will be shown here!</p>
+                <button id="close-popup" class="close-btn">Close</button> <!-- Close Button -->
+            </div>
+    
+
+            <div class="radio-content">
+                <div id="image-container">
+                    <img id="image1" src="" alt="Station Image">
+                    <img id="image2" src="" alt="Station Image">
+                </div>
+                <div class="radio-info">
+                    <p id="country"></p>
+                    <p id="station-name"></p>
+                    <p id="artist-name"></p>
+                    <p id="song-name"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="browse">Browse</button>
+            <button id="replay">Replay</button>
+            <button id="prev">Left Arrow</button>
+            <button id="tune">Tune</button>
+            <button id="next">Right Arrow</button>
+            <button id="traffic">Traffic & Weather</button>
+            <button id="Audio">Audio</button>
+        </div>
+
+
+        <div class="menu-buttons">
+            <button class="menu-btn">Radio</button>
+            <button class="menu-btn">Media</button>
+            <button class="menu-btn">Climate</button>
+            <button class="menu-btn">Apps</button>
+            <button class="menu-btn">Nav</button>
+            <button id="phone-button" class="menu-btn">Phone</button>
+            <button id="settings-btn" class="menu-btn">Settings</button>
+        </div>
+
+
+        <footer>
+            <button class="VR">VR</button>
+            <button id="speechToTextButton" class="Speech-to-text">Speech to Text</button>
+            <button id ="lk-btn">LKNOB</button>
+            <button id="rk-btn">RKNOB</button>
+        </footer>
+
+        
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JS/radioHome.js"></script>
+    <script src="../JS/climateHome.js"></script>
+</body>
+</html>

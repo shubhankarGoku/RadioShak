@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic & Weather</title>
+    <link rel="stylesheet" href="../CSS/trafficWeather.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="back-button">⬅</div>
+            <div class="title">SAT > Traffic & Weather</div>
+            <div class="close-button">Close</div>
+        </header>
+
+        <div class="content">
+            <div class="list-header">Select City for Traffic & Weather Reports:</div>
+            <div class="item-list">
+                <div class="item selected" data-index="0">135 Detroit <input type="checkbox" checked></div>
+                <div class="item" data-index="1">136 Los Angeles <input type="checkbox"></div>
+                <div class="item" data-index="2">133 New York <input type="checkbox"></div>
+                <div class="item" data-index="3">134 Philadelphia <input type="checkbox"></div>
+                <div class="item" data-index="4">137 Chicago <input type="checkbox"></div>
+                <div class="item" data-index="5">138 Houston <input type="checkbox"></div>
+                <div class="item" data-index="6">139 Miami <input type="checkbox"></div>
+                <div class="item" data-index="7">140 San Francisco <input type="checkbox"></div>
+            </div>
+            <div class="item-count">8 items in list</div>
+            <div class="scroll-line">
+                <div class="up-arrow">▲</div> <!-- Up arrow -->
+                <div class="scroll-bar"></div>
+                <div class="down-arrow">▼</div> <!-- Down arrow -->
+            </div>
+            
+        </div>
+
+        <div class="menu-buttons">
+            <button class="menu-btn">Radio</button>
+            <button class="menu-btn">Media</button>
+            <button class="menu-btn">Climate</button>
+            <button class="menu-btn">Apps</button>
+            <button class="menu-btn">Nav</button>
+            <button class="menu-btn">Phone</button>
+            <button id="settings-btn" class="menu-btn">Settings</button>
+        </div>
+
+        <div class="footer">
+            <button id="lk-btn">LKNOB</button>
+            <button id="rk-btn">RKNOB</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JS/trafficWeather.js"></script>
+</body>
+</html>

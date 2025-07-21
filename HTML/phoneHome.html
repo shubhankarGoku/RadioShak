@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Home Screen</title>
+    <link rel="stylesheet" href="../CSS/phoneHome.css">
+</head>
+<body>
+    <div class="notification-bar">
+        <header>
+            <div class="time-temp">
+                <span id="time"></span>
+                <span id="temp"></span>
+            </div>
+        </header>
+
+        <div id="dab-field">DAB 56</div>
+       <!--  <div id="time-field">10:57</div> -->
+       <!-- <div id="temp-field">56°C</div> -->
+        <div id="notification-icon">Notifications</div>
+    </div>
+
+    <div class="phone-section">
+        <div class="phone-status">
+            <div class="phone-buttons-left">
+                <button id="redial">Redial</button>
+                <button id="end">End</button>
+            </div>
+            <div class="phone-text">
+                <p>No phone connected.<br>Go to Settings to pair phone.</p>
+            </div>
+
+             <!-- Right-side buttons -->
+        <div class="phone-buttons-right">
+            <button id="mute">Mute</button>
+            <button id="transfer">Transfer</button>
+            <button id="join-calls">Join Calls</button>
+        </div>
+
+        <div class="button-container">
+            <button class="phone-button">Phonebook</button>
+            <button class="phone-button">Recent</button>
+            <button class="phone-button">Dial</button>
+            <button class="phone-button">Messaging</button>
+            <button class="phone-button">Settings</button>
+        </div>
+        </div>
+    </div>
+    
+
+    <div class="nav-buttons">
+        <button id="radio-button">Radio</button>
+        <button>Media</button>
+        <button>Climate</button>
+        <button>Apps</button>
+        <button>Nav</button>
+        <button>Phone</button>
+        <button>Settings</button>
+    </div>
+
+    <button class="connect-button">Connect phone</button>
+    <button class="pair-a-phone-button">Pair a phone</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JS/phoneHome.js"></script>
+    <script src="../JS/climateHome.js"></script>
+
+<!-- Popup for phone connection
+ A popup can be created using an alert or using confirm or simply using a DIV  -->
+ <!--the popup created below has a yes and no button. It also has a close button-->
+<div id="phone-popup" class="popup" style="display: none;">
+    <div class="popup-header">
+      <span class="close-popup">&times;</span>
+    </div>
+    <div class="popup-body">
+      <p>No phone connected.<br>Would you like to pair a phone?</p>
+      <div class="popup-buttons">
+        <button id="yes-btn">Yes</button>
+        <button id="no-btn">No</button>
+      </div>
+    </div>
+  </div>
+  <!--end of 1st popup-->
+
+  <!-- Second popup: Pairing procedure -->
+<div id="pairing-popup" class="popup" style="display: none;">
+    <div class="popup-header">
+      <button class="close-pairing">Close</button>
+    </div>
+    <div class="popup-body">
+      <p>
+        Start pairing procedure on phone or Bluetooth device?<br>
+        Vehicle device name: <strong>Uconnect</strong><br>
+        PIN : <strong>3667</strong>
+      </p>
+      <div class="popup-buttons">
+        <button id="cancel-pairing">Cancel</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Third popup: Confirm Pairing procedure -->
+   <div id="confirm-pairing-popup" class="popup" style="display: none;">
+    <div class="popup-header">
+      <button class="close-pairing">Close</button>
+    </div>
+    <div class="popup-body">
+      <p>
+        Vehicle device name: <strong>Uconnect</strong><br>
+        PIN : <strong>3667</strong>
+      </p>
+      <br>
+      Please confirm displayed PIN matches your device.
+      <div class="popup-buttons">
+        <button id="yes-btn1">Yes</button>
+        <button id="no-btn">No</button>
+      </div>
+    </div>
+  </div>
+
+  <!--fourth and final popup-->
+  <div id="pairing-in-progress" class="popup" style="display: none;">
+    <div class="popup-header">
+      <button class="close-pairing">Close</button>
+    </div>
+    <div class="popup-body">
+      <p>
+        Pairing in progress<br>
+        Please wait.
+      </p>
+      
+    </div>
+  </div>
+
+
+</body>
+</html>
