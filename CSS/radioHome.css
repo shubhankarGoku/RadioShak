@@ -1,0 +1,204 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+.time-temp {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+}
+
+.stations {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.radio-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#image1, #image2 {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.radio-info {
+  margin-left: 20px;
+}
+
+
+
+button {
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.menu-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-top: 2px solid #000;
+  background-color: #f0f0f0;
+}
+
+.menu-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+footer{
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+ }
+
+ #image2 {
+  transform: scaleY(-1); /* Vertical mirror */
+  filter: grayscale(80%);       /* Greyed out effect */
+  opacity: 0.8;                 /* Slightly reduce opacity for better effect */
+}
+
+/* --- */
+.left-buttons {
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-buttons button {
+  margin-bottom: 10px;
+  background-color: #ddd;
+  padding: 10px;
+  border: 2px solid black; /* Adds a black border */
+  cursor: pointer;
+}
+
+.left-buttons button:hover,
+.left-buttons button:active {
+  border-color: red; /* Changes the border to red on hover and click */
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between; /* Adjusts spacing */
+  margin-top: 20px;
+  padding: 0 40px; /* Adds space around buttons */
+}
+
+.action-buttons button {
+  margin: 0 10px; /* Ensures even spacing between buttons */
+}
+
+#browse,#replay, #prev,#tune,#next, #traffic, #Audio {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+
+/* checking whether AM, FM or DAB was clicked last time and highlighting the same*/
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+/* checking whether AM, FM or DAB was clicked last time and highlighting the same*/
+.selected {
+  /*border: 2px solid red;*/
+  border: 2px solid red !important;
+}
+
+/* Popup style */
+.popup {
+  display: none; 
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  width: 300px; /* Longer in breadth */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: border-color 0.3s ease;
+  padding-top: 40px; /* Adds padding to the top so the content doesn't overlap with the close button */
+}
+
+.popup.open {
+  border-color: red; /* Red border when the popup is open */
+}
+
+/* Close button style positioned at the top right */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ddd;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #ccc;
+}
+
+
+.right-buttons {
+  position: absolute;
+  right: 20px; /* Position on the right */
+  top: 150px;  /* Same top position as left buttons */
+  display: flex;
+  flex-direction: column;
+}
+
+.right-buttons button {
+  margin-bottom: 10px;
+  background-color: #ddd;
+  padding: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.right-buttons button:hover,
+.right-buttons button:active {
+  border-color: red;
+}
